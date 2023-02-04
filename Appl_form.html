@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script type="text/javascript">
+	
+
+	//....................Email validate.........
+		function check() {
+			// body...
+		
+		 em=document.getElementById('email')
+		email=/^[^]+\@[^]+\.([a-z]{3})+$/;
+
+              if(em.value==""){
+				alert("Enter the Email");
+				return false;
+			}
+		if(!email.test(em.value)){
+			alert("Enter corect email");
+			return false;
+		}
+
+
+
+ us=document.getElementById('user')
+		user=/^[A-Z]+([0-9]{4})+$/;
+
+             
+		if(!email.test(us.value)){
+			alert("Enter corect regNo");
+			return false;
+		}
+
+
+
+		 pas1=document.getElementById("password1");
+		  pas2=document.getElementById("password2");
+
+		if(pas1.value!= pas2.value){
+			alert("Please enter the correct password");
+			return false;
+		}
+
+	}		
+</script>
+
+	<style type="text/css">
+		td{
+			padding: 5px;
+		}
+		input[type="submit"]
+		{
+			margin-right:6px;
+		}
+	</style>
+</head>
+<body>
+	<h3>Application Form</h3>
+	<form>
+	<table>
+		<tr>
+			<td><lable>Full Name<lable></td>
+			<td><input type="text" name="" placeholder="Last Name" required=""></td>
+			<td><input type="text" name="" placeholder="First Name"></td>
+			<td><input type="text" name="" placeholder="Middle Name" required=""></td>
+
+		</tr>
+		<tr>
+			<td><lable>Marital Statis</lable></td>
+			<td><input type="radio" name="status" value="single" required="">single</td>
+			<td><input type="radio" name="status" value="Married" required="">Married</td>
+			
+
+		</tr>
+		<tr>
+         <td><lable>National Identification Number</lable></td>
+			<td><input type="text" name="nic" placeholder="NIC NO" required="" pattern="[0-9]{9}v"></td>
+		</tr>
+		<tr>
+			<td><lable>Gender</lable></td>
+			<td><input type="radio" name="sex" value="Male" >Male</td>
+			<td><input type="radio" name="sex" value="female">Female</td>
+			
+
+		</tr>
+
+		<tr>
+			<td><lable>Date of Birth</lable></td>
+			<td><select required="">
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+
+<option>3</option>
+
+<option>4</option>
+
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+
+
+
+		</select></td>
+		<td>
+			<select required="">
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+
+<option>march</option>
+
+<option>April</option>
+
+<option>may</option>
+<option>june</option>
+<option>july</option>
+<option>august</option>
+<option>september</option>
+<option>November</option>
+<option>December</option>
+</select>
+		</td>
+		<td><input type="text" name="" placeholder="Year" required=""></td>
+
+		</tr>
+		<tr>
+			<td>Mail Address</td>
+			<td><input type="text" name="" placeholder="Address" required=""></td>
+		</tr>
+
+		<tr>
+			<td>E-Mail Address</td>
+			<td><input type="text" name="" placeholder="E-mail" id="email" required=""></td>
+		</tr>
+		
+		<tr>
+			<td>User Name:</td>
+			<td><input type="text" name="" placeholder="User Name" id="user" required=""></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="Password" name="" placeholder="Password" id="password1" required=""></td>
+		</tr>
+
+		<tr>
+			<td>Retype Password</td>
+			<td><input type="Password" name="" placeholder="Retype Password" id="password2" required=""></td>
+		</tr>
+
+		
+		</table>
+		<br><br>
+		<center><input type="submit" name="" value="submit" onclick="check()"><input type="button" name="reset" value="Reset"></center>
+	</form>
+		
+
+	
+
+</body>
+</html>
